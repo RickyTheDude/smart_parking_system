@@ -1,0 +1,48 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+<div class="h-screen flex justify-center items-center">
+    <div class="w-full max-w-lg px-12 py-10 bg-white bg-opacity-97 border border-gray-200 border-opacity-20 rounded-lg auth-container">
+        <h5 class="text-2xl font-bold tracking-tight text-purple-900 dark:text-white text-center">Register</h5>
+        <form class="w-full flex max-w-md flex-col gap-4" method="POST">
+            <div>
+                <div class="mb-2 block">
+                    <label for="full_name" class="text-sm font-medium required">Full Name</label>
+                </div>
+                <input id="full_name" type="text" placeholder="Your Full Name" name="full_name" class="bg-gray-50 bg-opacity-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:bg-opacity-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" required />
+            </div>
+            <div>
+                <div class="mb-2 block">
+                    <label for="email" class="text-sm font-medium required">Email</label>
+                </div>
+                <input id="email" type="email" placeholder="Your Email" name="email" class="bg-gray-50 bg-opacity-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:bg-opacity-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" required />
+            </div>
+            <div>
+                <div class="mb-2 block">
+                    <label for="password" class="text-sm font-medium required">Password</label>
+                </div>
+                <input id="password" type="password" placeholder="Your Password" name="password" class="bg-gray-50 bg-opacity-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:bg-opacity-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" required />
+            </div>
+            <div>
+                <div class="mb-2 block">
+                    <label for="confirm_password" class="text-sm font-medium required">Confirm Password</label>
+                </div>
+                <input id="confirm_password" type="password" placeholder="Confirm Your Password" name="confirm_password" class="bg-gray-50 bg-opacity-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:bg-opacity-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" required />
+            </div>
+            <button type="submit" class="focus:outline-none text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-purple-500 dark:hover:bg-purple-600 dark:focus:ring-purple-800">Register</button>
+            <p class="text-center text-sm text-gray-500">Already registered? <a href="/login" class="font-semibold leading-6 text-purple-600 hover:text-purple-500">Login Here</a></p>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
